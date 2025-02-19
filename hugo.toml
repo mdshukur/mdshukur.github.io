@@ -2,7 +2,7 @@ baseurl      = "https://mdshukur.github.io/"
 title        = "Alli"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
-paginate     = 10
+paginate     = 11
 publishDir = "docs"
 
 [params]
