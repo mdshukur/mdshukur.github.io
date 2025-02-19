@@ -1,5 +1,5 @@
 baseURL = "https://mdshukur.github.io/"
-title   = "Ali"
+title   = "Shukur Mahmud"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -144,7 +144,7 @@ disableHugoGeneratorInject = false
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ cd /home/"
+    logoText     = "Ali"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
