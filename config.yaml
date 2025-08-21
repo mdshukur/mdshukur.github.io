@@ -1,0 +1,18 @@
+baseURL: http://mdshukur.github.io/
+title: My New Hugo Site
+# alternate copyright company text
+copyright: Web Design Inc.
+
+# menu links via config file
+menu:
+  main:
+  - name: Github
+    url: http://www.github.com/
+    weight: 90
+    params:
+      blank: true
+  - name: Google
+    url: http://www.google.com/
+    weight: 100
+    params:
+      blank: true
