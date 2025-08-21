@@ -1,4 +1,14 @@
-.hugo_build.lock
-node_modules
+# Hugo build artifacts (generated files)
 public/
 resources/
+
+# Hugo lock file (temporary build lock)
+.hugo_build.lock
+
+# Node dependencies (if you use Node.js)
+node_modules/
+
+# OS or editor-specific files (optional)
+.DS_Store
+Thumbs.db
+.vscode/
