@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Residential on Project Leo</title>
+    <link>http://localhost:1313/categories/residential/</link>
+    <description>Recent content in Residential on Project Leo</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/residential/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ascot</title>
+      <link>http://localhost:1313/projects/ascot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ascot/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cobham</title>
+      <link>http://localhost:1313/projects/cobham/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cobham/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>London</title>
+      <link>http://localhost:1313/projects/london/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/london/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

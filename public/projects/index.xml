@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Our Projects on Project Leo</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Our Projects on Project Leo</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Aug 2025 10:00:00 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ashville Ashstead</title>
+      <link>http://localhost:1313/projects/ashville-ashstead/</link>
+      <pubDate>Fri, 29 Aug 2025 10:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/projects/ashville-ashstead/</guid>
+      <description>&lt;p&gt;This is the &lt;strong&gt;full description&lt;/strong&gt; of the project.&lt;br&gt;&#xA;You can add paragraphs, images, and anything else in Markdown here.&lt;/p&gt;&#xA;&lt;p&gt;Detailed description of the Warner Brothers project&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Calema, Government</title>
+      <link>http://localhost:1313/projects/calema-government-/</link>
+      <pubDate>Fri, 29 Aug 2025 10:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/projects/calema-government-/</guid>
+      <description>&lt;p&gt;This is the &lt;strong&gt;full description&lt;/strong&gt; of the project.&lt;br&gt;&#xA;You can add paragraphs, images, and anything else in Markdown here.&lt;/p&gt;&#xA;&lt;p&gt;Detailed description of the Warner Brothers project&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Warner Brothers</title>
+      <link>http://localhost:1313/projects/warner-brothers/</link>
+      <pubDate>Fri, 29 Aug 2025 10:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/projects/warner-brothers/</guid>
+      <description>&lt;p&gt;This is the &lt;strong&gt;full description&lt;/strong&gt; of the project.&lt;br&gt;&#xA;You can add paragraphs, images, and anything else in Markdown here.&lt;/p&gt;&#xA;&lt;p&gt;Detailed description of the Warner Brothers project&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ascot</title>
+      <link>http://localhost:1313/projects/ascot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ascot/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cinema A/V Headquarters</title>
+      <link>http://localhost:1313/projects/cinema-headquarters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cinema-headquarters/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cobham</title>
+      <link>http://localhost:1313/projects/cobham/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cobham/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>High Water Facility</title>
+      <link>http://localhost:1313/projects/high-water-facility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/high-water-facility/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>London</title>
+      <link>http://localhost:1313/projects/london/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/london/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Qube</title>
+      <link>http://localhost:1313/projects/qube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/qube/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Super Prime Construction</title>
+      <link>http://localhost:1313/projects/super-prime-construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/super-prime-construction/</guid>
+      <description>&lt;h4 id=&#34;details-your-project&#34;&gt;Details your project &lt;br&gt; &lt;br&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;project description&lt;/strong&gt;.&lt;br&gt;&#xA;You can write multiple paragraphs of content here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
