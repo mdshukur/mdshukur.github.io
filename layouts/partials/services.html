@@ -1,0 +1,29 @@
+{{ with .Site.GetPage "section" "services" }}
+<section id="services" class="services-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Our Services</h2>
+        <hr class="w-25 mx-auto">
+      <p class="lead text-dark">At Project Leo Construction, we provide a comprehensive, end-to-end service covering every stage of the build process.</p>
+    
+    </div>
+    
+    <div class="row g-4">
+      {{ range .Params.services }}
+      <div class="col-lg-4 col-md-6 wow animate__{{ .animation }}" data-wow-delay="{{ .delay }}s">
+        <div class="card h-100 service-card border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="service-icon mb-4">
+              <i class="fas fa-{{ .icon }} fa-2x"></i>
+            </div>
+            <h3 class="card-title">{{ .title }}</h3>
+            <p class="card-text">{{ .description }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

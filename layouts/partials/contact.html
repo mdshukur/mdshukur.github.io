@@ -1,0 +1,88 @@
+{{ with .Site.GetPage "contact" }}
+<section id="next-section" class="py-5 bg-light">
+  <div class="container">
+        {{/* Page Title and Content */}}
+    <div class="text-center mb-5">
+        <h1>{{ .Title }}</h1>
+        <hr class="w-25 mx-auto">
+    </div>
+
+    <div class="row g-5 align-items-center flex-column-reverse-flex-md-row">
+      <!-- Left Column: Title + Content + Contact Info -->
+      <div class="col-md-6 wow fadeInLeft">
+        <div class="common_title">
+        </div>
+        <div class="text-muted mb-4 leads">
+          {{ .Content | safeHTML }}
+        </div>
+
+        <!-- Contact Info -->
+        <ul class="list-unstyled address_info mb-4">
+          {{ with .Params.email }}
+          <li class="mb-3">
+            <i class="fas fa-envelope text-primary me-2"></i>
+            <a class="text-dark" href="mailto:{{ . }}" class="text-decoration-none">{{ . }}</a>
+          </li>
+          {{ end }}
+
+          {{ with .Params.phone }}
+          <li class="mb-3">
+            <i class="fas fa-phone text-primary me-2"></i>
+            <a class="text-dark" href="tel:{{ . }}" class="text-decoration-none">{{ . }}</a>
+          </li>
+          {{ end }}
+
+          {{ with .Params.address }}
+          <li>
+            <i class="fas fa-map-marker-alt text-primary me-2"></i>{{ . }}
+          </li>
+          {{ end }}
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="d-flex gap-3">
+          {{ with .Params.social.instagram }}
+          <a href="{{ . }}" target="_blank" class="social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          {{ end }}
+
+          {{ with .Params.social.linkedin }}
+          <a href="{{ . }}" target="_blank" class="social-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- Right Column: Contact Form -->
+      <div class="col-md-6 wow fadeInRight">
+        <div class="card border-0 rounded-1">
+          <h3 class="d-block d-md-none py-3 px-2">Get in Touch</h3>
+          <div class="card-body p-2 p-md-4 py-3">
+           <form method="POST" action="https://formspree.io/f/{{ .Params.formspree }}">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="_replyto" placeholder="Enter Your Email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter Your Message" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                <i class="fas fa-paper-plane me-2"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

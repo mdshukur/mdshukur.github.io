@@ -1,0 +1,116 @@
+<footer class="site-footer bg-dark text-white pt-5" style="background-color: #333333;">
+  <div class="container text-center">
+<div class="row justify-content-center align-items-center mb-3">
+  {{- range .Site.Params.footerBrandLogos }}
+    <div class="col-auto col-md-2 mb-3">
+      <img src="{{ .image }}" alt="{{ .alt }}" class="img-fluid grayscale-logo mb-3 p-2">
+    </div>
+  {{- end }}
+</div>
+
+<div style="border-bottom:1px solid gray;"> </div>
+
+
+
+
+
+
+
+
+        <!-- Footer Section -->
+        <footer class="footer-custom">
+            <div class="container">
+                <div class="row">
+                    <!-- First Column: Slogan -->
+                    <div class="col-lg-4 footer-col mb-4 mb-lg-0 text-center text-md-start">
+                        <p class="slogan-text">Super Prime Construction Since 1998</p>
+                    </div>
+
+                    <!-- Second Column: Contact Info -->
+                    <div class="col-lg-4  footer-col text-center">
+                        <h3>CONTACT</h3>
+                        <p>Great Hampton Row, Birmingham, <br> England, B19 3JG</p>
+                         <p class="mt-2">Email</p>
+                        <p>
+                            <a href="mailto:info@projectleoconstruction.com">info@projectleoconstruction.com</a>
+                        </p>
+                    </div>
+
+                    <!-- Third Column: Follow Links -->
+                    <div class="col-lg-4 footer-col text-md-end text-center">
+                        <h3>FOLLOW</h3>
+                        <p><a href="https://www.instagram.com/ssplclondon/" target="_blank">Instagram</a></p>
+                        <p><a href="https://uk.linkedin.com/in/plcplcplc" target="_blank">Linkedin</a></p>
+                    </div>
+
+                </div>
+                 
+            </div>
+            <p class="pt-5 pb-3" style="font-size:12px;">Copyright &copy; {{ now.Format "2006" }} Project Leo | All rights reserved.</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <style>
+    .grayscale-logo {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+      max-height: 60px;
+    }
+    .grayscale-logo:hover {
+      filter: grayscale(0%);
+    }
+     .footer-custom {
+            padding-top: 20px;
+            color: #d1d1d1;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        .footer-col{
+        text-align: left;
+        }
+        .footer-custom h2 {
+             font-size: 2.25rem;
+             color: #ffffff;
+             margin-bottom: 2rem;
+             font-weight: 600;
+        }
+
+        .footer-custom h3 {
+            font-size: 12px;
+            font-weight: 400;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .footer-custom p, .footer-custom a {
+            color: #d1d1d1;
+            text-decoration: none;
+            line-height: 1.8;
+        }
+
+        .footer-custom a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-custom .slogan-text {
+            font-size: 1rem;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+
+  </style>
+
+  
+</footer>

@@ -1,0 +1,55 @@
+{{ define "main" }}
+<main class="container py-5" id="next-section">
+
+  {{/* Two-column content + bullet points */}}
+  <div class="row mb-5">
+    <div class="col-md-6">
+      {{ .Content }}
+    </div>
+    <div class="col-md-6">
+      {{ with .Params.details }}
+        <ul class="list-unstyled">
+          {{ range . }}
+            <li>✅ {{ . }}</li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* Project-specific Image Gallery */}}
+{{ with .Params.gallery }}
+<section class="mb-5">
+  <h1 class="mb-4">Project Gallery</h1>
+  <div class="row project-gallery">
+    {{ range . }}
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a href="{{ . | relURL }}" class="lightbox-trigger">
+          <img src="{{ . | relURL }}" class="img-fluid rounded shadow-sm" alt="Gallery image">
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+  {{/* Video Section for local file */}}
+{{ with .Params.video }}
+<section class="mb-5">
+  <h2 class="mb-4">Project Video</h2>
+  <div class="ratio ratio-16x9">
+    <video controls playsinline preload="metadata">
+      <source src="{{ . | relURL }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+{{ end }}
+
+</main>
+{{ end }}
+
+
+
+
+

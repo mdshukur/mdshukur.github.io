@@ -1,0 +1,39 @@
+{{ with .Site.GetPage "page" "choose.md" }}
+<section class="choose-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="choose-content">
+          <h2 class="mb-2 wow animate__fadeInDown text-center text-md-start" data-wow-delay="0.1s">{{ .Params.heading }}</h2>
+         <hr class="w-25 d-md-none d-block mx-auto">
+          <p class="lead text-dark mb-3 wow animate__fadeIn" data-wow-delay="0.2s">{{ .Params.description }}</p>
+          
+          <div class="features-list">
+            {{ range $index, $feature := .Params.features }}
+            <div class="feature-item d-flex align-items-center mb-3 wow animate__fadeInLeft" data-wow-delay="{{ add 0.3 (mul $index 0.1) }}s">
+              <div class="feature-icon me-3">
+                <i class="fas fa-check-circle text-dark fw-normal"></i>
+              </div>
+              <span>{{ $feature }}</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 wow animate__fadeInRight" data-wow-delay="0.4s">
+        <div class="choose-image text-center">
+          {{ if .Params.image }}
+            <img src="{{ .Params.image | absURL }}" alt="{{ .Params.heading }}" class="img-fluid rounded shadow d-none d-md-block">
+          {{ else }}
+            <div class="image-placeholder bg-light rounded" style="height: 400px; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-building fa-5x text-muted"></i>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}

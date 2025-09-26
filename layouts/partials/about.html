@@ -1,0 +1,35 @@
+{{ with .Site.GetPage "about" }}
+<section id="next-section" class="py-5">
+  <div class="container">
+    {{/* Page Title and Content */}}
+    <div class="text-center mb-5">
+        <h1>{{ .Title }}</h1>
+        <hr class="w-25 mx-auto">
+    </div>
+
+    <div class="row g-md-5 g-0">
+
+      <!-- Left Column: Image -->
+      <div class="col-lg-5 position-relative">
+        <div class="shape-container wow fadeInLeft">
+          <div class="img-border">
+            {{ if .Params.image }}
+              <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="img-fluid rounded-3">
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Title + Content -->
+      <div class="col-lg-7 wow fadeInRight">
+        <div class="common_title">
+        </div>
+        <div class="text-muted">
+          {{ .Content | safeHTML }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}

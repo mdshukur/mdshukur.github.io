@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class="py-5" id="next-section">
+    {{/* Page Title and Content */}}
+    <div class="text-center mb-4">
+        <h1>{{ .Title }}</h1>
+        <div class="lead">{{ .Content }}</div>
+    </div>
+
+    {{/* Call the partial template to ensure the correct icon is used */}}
+    {{ partial "project-gallery.html" . }}
+</main>
+{{ end }}

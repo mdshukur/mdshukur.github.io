@@ -1,0 +1,562 @@
+
+/* Animate to cross when navbar is open */
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+:root {
+--primary-color:#B59410;
+--pure-white:#fff;
+--paragraph-color:#353F48;
+--black-color:#000;
+}
+
+html,
+body {
+ scroll-behavior: smooth;
+ overflow-x: hidden;
+
+}
+
+a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  color: var(--paragraph-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-weight: 600;
+  font-size: 40px;
+    font-family: "Brygada 1918", serif;
+}
+
+h2, .h2 {
+  font-weight: 600;
+  font-family: "Brygada 1918", serif;
+  font-size: 40px;
+}
+
+h3, .h3 {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+h4, .h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+h5, .h5{
+  font-family: "Brygada 1918", serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+
+
+
+
+span{
+  font-weight: 500;
+  color:var(--pure-black);
+  font-size: 16px;
+   font-family: "Poppins", sans-serif;
+}
+
+
+
+  .my-container {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+  }
+
+
+
+
+
+
+
+
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.593) !important;
+        backdrop-filter: blur(5px);
+}
+.navbar-brand img{
+  width: 220px;
+}
+.nav-link{
+ font-size: 17px;
+ font-weight: 400;
+ color: var(--pure-white);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.nav-link:focus, .nav-link:hover {
+     color: var(--primary-color);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  width: 30px;
+  margin-right: 10px;
+  height: 24px;
+  position: relative;
+}
+
+.navbar-toggler span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #b5b5b5; /* Change color if needed */
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler span:nth-child(1) { top: 0; }
+.navbar-toggler span:nth-child(2) { top: 10px; }
+.navbar-toggler span:nth-child(3) { top: 20px; }
+
+/* Animate to cross when navbar is open */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow:none;
+}
+
+
+
+
+
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+h2.headline{
+  font-weight: 600;
+  font-size: 65px;
+  letter-spacing:3px;
+}
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.558); 
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+ h5.card-title {
+        font-weight: 500;
+         font-family: "Poppins", sans-serif;
+    }
+
+.card-text:last-child {
+    margin-bottom: 0;
+    font-family: "Poppins", sans-serif;
+}
+.project-overlay-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding:30px 40px;
+    margin: 0;
+    color:white;
+}
+
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Keeps all images the same ratio */
+}
+
+.project-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop instead of stretch */
+    transition: transform 0.3s ease;
+}
+
+.project-image-container:hover img {
+    transform: scale(1.15);
+}
+
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.656);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-container:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay-content {
+    color: white;
+    text-align: center;
+}
+
+.project-grid {
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* --- HERO CAROUSEL STYLES --- */
+.lead {
+    font-size: 1.30rem;
+    font-weight: 500;
+    color: #f5f3f3f8;
+    margin: 10px 0px;
+    font-family: "Brygada 1918", serif;
+}
+.leads p{
+    font-size: 1.30rem;
+    font-family: "Brygada 1918", serif;
+}
+.lead p{
+    font-family: "Brygada 1918", serif;
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    font-family: "Brygada 1918", serif;
+}
+.btn-warning {
+    --bs-btn-color:#fff;
+      font-size: 18px;
+      font-weight: 500;
+    --bs-btn-bg: #b59410d4;
+    --bs-btn-border-color: #b59410;
+    --bs-btn-hover-color:#ffffff;
+    --bs-btn-hover-bg: #b59410;
+    --bs-btn-hover-border-color: #b59410;
+    --bs-btn-focus-shadow-rgb: 217, 164, 6;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b59410;
+    --bs-btn-active-border-color: #b59410;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #ffc107;
+    --bs-btn-disabled-border-color: #ffc107;
+}
+
+
+.btn-outline-primary {
+    --bs-btn-color: #000;
+    --bs-btn-border-color: #b59410;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #b59410;
+    --bs-btn-hover-border-color: #b59410;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b59410;
+    --bs-btn-active-border-color: #b59410;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #0d6efd;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #0d6efd;
+    --bs-gradient: none;
+}
+
+.social-link {
+    background-color: rgba(255, 241, 176, 0.812) !important;
+    color: var(--primary-color) !important;
+    padding-top: 2px;
+}
+
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 241, 176, 0.812);
+    color: var(--primary-color);
+    padding-top: 2px;
+  }
+  .social-link:hover {
+    color: rgba(255, 140, 0, 0.929);
+    transform: translateY(-3px);
+  }
+  .address_info i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.812);
+    color: var(--primary-color) !important;
+    padding-top: 2px;
+  }
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#heroCarousel {
+    height: 100vh; /* Make carousel take full viewport height */
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* This prevents the image from stretching */
+    object-position: center;
+}
+
+/* Adds a dark overlay so white text is readable */
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    /* Vertically centers the caption */
+    right:10%;
+    left:10%;
+    bottom: 50%;
+    transform: translateY(50%);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/*====================================== About css ==============================*/
+
+.img-border {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+}
+
+.img-border img {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.img-border::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 5rem;
+  bottom: 5rem;
+  border: 7px solid var(--primary-color);
+  border-radius: 6px;
+}
+
+.shape-container img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.w-25 {
+    width: 10% !important;
+}
+hr {
+    margin: 0.5rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 3px solid var(--black-color) !important;
+    opacity: 1;
+    width: 10% !important;
+}
+
+
+
+
+
+
+.service-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+}
+.service-icon {
+  color: var(--primary-color);
+  padding: 10px;
+  line-height:46px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(255, 241, 176, 0.867);
+}
+.service-icon i{
+font-size: 28px !important;
+}
+
+
+
+
+
+
+
+
+
+
+.ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* --- Simple Lightbox CSS --- */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox.active {
+  display: flex;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.lightbox img.fade-in {
+  opacity: 1;
+}
+.lightbox .close, .lightbox .prev, .lightbox .next {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+.lightbox .close { top: 20px; right: 30px; }
+.lightbox .prev { left: 30px; top: 50%; transform: translateY(-50%); }
+.lightbox .next { right: 30px; top: 50%; transform: translateY(-50%); }
+
+
+
+
+
+.row.project-gallery img {
+    height: 280px;
+    object-fit: cover;
+}

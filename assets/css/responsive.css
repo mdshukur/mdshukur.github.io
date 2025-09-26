@@ -1,0 +1,67 @@
+@media screen and (max-width: 767px) {
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+     margin-top: 20px;
+}
+#heroCarousel {
+    height: 80vh; /* Make carousel take full viewport height */
+}
+.carousel-item {
+    height:80vh;
+}
+    .project-image-container {
+        aspect-ratio: 16 / 9; /* Wider, less tall for small screens */
+    }
+    .my-containerr {
+      min-height: 75vh;
+    }
+    .navbar-brand img{
+      width: 180px;
+    }
+    h2.slider_title{
+      font-size: 28px !important;
+    }
+    p.slider_para{
+        font-size: 17px;
+    }
+    .w-25 {
+    width: 20% !important;
+    }
+    .carousel-caption {
+    right:10%;
+    left:10%;
+}
+.row.project-gallery img {
+    height: 250px;
+}
+h5.card-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+h1, .h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+h2, .h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.lead p{
+    width: 100%;
+    font-size: 15px;
+}
+.lead{
+    width: 100% !important;
+    font-size: 15px;
+}
+
+
+
+
+}
+@media screen and (max-width: 500px) {
+
+    .img-border {
+        min-height: 310px;
+    }
+}

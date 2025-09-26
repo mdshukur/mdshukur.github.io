@@ -1,0 +1,43 @@
+{{/* layouts/partials/project-gallery.html */}}
+
+{{ $projectPages := where site.RegularPages "Section" "projects" }}
+
+
+{{/* Filter Navigation */}}
+<div id="project-filters" class="d-flex justify-content-center flex-wrap mb-4">
+    <button class="btn btn-outline-primary m-2 active" data-filter="*">All</button>
+    {{ range site.Taxonomies.categories.ByCount }}
+        <button class="btn btn-outline-primary m-2" data-filter=".{{ .Name | urlize }}">{{ .Name | title }}</button>
+    {{ end }}
+</div>
+
+{{/* Project Grid */}}
+<div class="containerss px-md-5 px-2">
+    <div class="row project-grid">
+    {{ range $projectPages }}
+        {{ $categories := .Params.categories }}
+        <div class="col-md-4 col-sm-6 project-item mb-4 
+            {{ range $categories }}{{ . | urlize }} {{ end }}">
+            <div class="card h-100">
+                <div class="project-image-container">
+                    <a href="{{ .Permalink }}">
+                        <img src="{{ .Params.featured_image | relURL }}" class="img-fluid" alt="{{ .Title }}" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/6c757d/fff?text=Project+Image';">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                {{ with .Params.slogan }}
+                                    <p class="small">{{ . }}</p>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-body text-center d-flex justify-content-between">
+                    <h5 class="card-title">{{ .Title }}</h5>
+                    <p class="card-text text-muted">{{ .Params.location }}</p>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+</div>
+</div>
