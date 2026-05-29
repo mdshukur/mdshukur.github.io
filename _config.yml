@@ -227,9 +227,5 @@ jekyll-archives:
     category: /categories/:name/
 
 
-htmlproof:
-  ignore_urls:
-    - "/^http:\\/\\//"
-
 
 
