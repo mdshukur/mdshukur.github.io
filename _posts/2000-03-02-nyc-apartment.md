@@ -15,7 +15,7 @@ image:
 
 Studio apartment
 
-- Double bed
+- Double beds
 - Futon (couch or double bed)
 - 32" TV with cable
 - VCR, CD stereo, DVD
